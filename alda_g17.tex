@@ -1,0 +1,48 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{geometry}
+
+% Set the margins
+\geometry{
+  top=5mm,
+  bottom=25mm,
+  left=25mm,
+  right=25mm
+}
+
+% Define information
+\def\Course{\includegraphics[width=45mm,height=55mm]{images/Picture1.png} \\[5mm] \textit{Department of Computer Science and Engineering}} 
+\def\Institute{\textit{Jahangirnagar University}\\ \textit{Savar, Dhaka-1342}}
+\def\BoldTitle{\textbf{Assignment on Network Traffic}}
+\def\Subtitle{\textbf{Course Title: Wireless Network \\ 4th Year 1st Semester Examination -2023}}
+
+% Author and professor details
+\def\Authors{\textbf{Prepared By:-}\\ Sovon  Mallick\\ Class Roll: 380\\ Exam Roll: 202192 \\[6mm]} % Reduced space after "Prepared By"
+\def\Docent{\textbf{Submitted To:-}\\[1mm] Samsun Nahar Khandakar\\  Lecturer \\[2mm]} % Reduced space between lines
+
+\title{
+  \vspace{20mm} % Space at the top of the page
+  \BoldTitle\\[10mm] % Space between the title and subtitle
+  \Subtitle
+}
+
+\author{
+  \vspace{5mm} % Space before author details
+  \Authors
+  \Docent\\[5mm] % Space after professor details
+  \Course\\[5mm] % Space between course and institute
+  \Institute
+}
+
+\date{\vspace{5mm} \textbf{\textit{Date: \today}}} % Date at the bottom of the page
+
+\begin{document}
+
+% Generate the title page
+\maketitle
+
+% Ensure this page has a plain style with no numbering or headers
+\thispagestyle{plain}
+
+\end{document}
